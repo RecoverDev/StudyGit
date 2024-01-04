@@ -166,11 +166,12 @@ a5a982a Добавление файла readme.md
 ### Жизненый цикл файла в Git
 
 ```mermaid
-A[untracked] -- git add -->B[staged]
-B -- git commit --> C[tracked]
-C -- Изменение --> D[modified]
-D -- git add --> B
-B -- Изменение --> D
+flowchart TD
+    A[untracked] -- git add -->B[staged];
+    B -- git commit --> C[tracked];
+    C -- Изменение --> D[modified];
+    D -- git add --> B;
+    B -- Изменение --> D;
 ```
 
 
